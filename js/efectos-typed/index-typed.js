@@ -3,6 +3,7 @@ const typed = new Typed('.typed', {
         '<span class="titulos-inicio">Tecnología<span/>',
         '<span class="titulos-inicio">Cocina<span/>',
         '<span class="titulos-inicio">Bazar<span/>',
+        '<span class="titulos-inicio">Jueguetería<span/>',
         '<span class="titulos-inicio">Ferretería<span/>',
         '<span class="titulos-inicio">Vehiculos<span/>',
         '<span class="titulos-inicio">¡Y mucho más!<span/>'

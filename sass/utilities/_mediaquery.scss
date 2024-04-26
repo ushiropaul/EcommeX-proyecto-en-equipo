@@ -1,20 +1,50 @@
 
 
 // HEADER MOBILE/TABLET 
-@media screen and (max-width: 992px){
-    header{
-        .only-nav-child{
+// @media screen and (max-width: 992px){
+//     header{
+//         .only-nav-child{
+//             position: relative;
+//             .div-desplegable{
+//                 position: absolute;
+//                 background-color: $violet-principal-color;
+//                 width: 100%;
+//                 top: 98px;
+//                 z-index: 9999;
+//                 .ul{
+//                     line-height: 5rem;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+@media screen and (max-width:980px){
+    .contenedor-fluido{
+        position: relative;
+        .boton-menu{
             position: relative;
-            .div-desplegable{
-                position: absolute;
-                background-color: $violet-principal-color;
-                width: 100%;
-                top: 98px;
-                z-index: 9999;
-                .ul{
-                    line-height: 5rem;
-                }
+            border: none;
+            display: flex;
+            align-items: center;
+            margin-right: 1rem;
+            
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        .contenedor-nav-header{
+            position: absolute;
+            top: 98px;
+            background-color: $violet-principal-color;
+            width: 100%;
+            padding-bottom: 1rem;
+            align-items: center;
+            text-align: center;
+            ul{
+                line-height: 5rem;
             }
         }
     }
-}
+}    

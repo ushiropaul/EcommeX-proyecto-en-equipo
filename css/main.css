@@ -24,41 +24,26 @@ a {
   font-weight: 600;
 }
 
-header .nav {
-  padding: 0;
-}
-header .nav .only-nav-child {
+header .header {
+  z-index: 99999;
   background-color: #121242;
-  padding: 0;
 }
-header .nav .only-nav-child .logo-a {
-  padding: 0;
-}
-header .nav .only-nav-child .logo-a img {
+header .header .contenedor-fluido img {
   max-width: 120px;
 }
-header .nav .only-nav-child .btn-menu:focus {
-  box-shadow: none;
+header .header .contenedor-fluido .boton-menu .menu-icon img {
+  width: 2rem;
 }
-header .nav .only-nav-child .btn-menu .menu {
-  margin-right: 2rem;
-  margin-bottom: 1rem;
-}
-header .nav .only-nav-child .div-desplegable {
-  display: flex;
-  justify-content: space-around;
-  padding: 2rem;
+header .header .contenedor-fluido .contenedor-nav-header {
+  align-items: center;
   text-align: center;
 }
-header .nav .only-nav-child .div-desplegable .ul {
-  line-height: 5rem;
-}
-header .nav .only-nav-child .div-desplegable .ul .ul-a {
+header .header .contenedor-fluido .contenedor-nav-header .texto-header {
   color: #e9e9e9;
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
-header .nav .only-nav-child .div-desplegable .ul .ul-a:hover {
+header .header .contenedor-fluido .contenedor-nav-header .texto-header:hover {
   color: #7878d8;
 }
 
@@ -151,22 +136,31 @@ main .index-sect-1 .div-titulo h1 span {
   font-size: 3rem;
   font-weight: 700;
 }
-main .index-sect-2 {
-  background-image: url();
-}
 
-@media screen and (max-width: 992px) {
-  header .only-nav-child {
+@media screen and (max-width: 980px) {
+  .contenedor-fluido {
     position: relative;
   }
-  header .only-nav-child .div-desplegable {
+  .contenedor-fluido .boton-menu {
+    position: relative;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  .contenedor-fluido .boton-menu:focus {
+    box-shadow: none;
+  }
+  .contenedor-fluido .contenedor-nav-header {
     position: absolute;
+    top: 98px;
     background-color: #121242;
     width: 100%;
-    top: 98px;
-    z-index: 9999;
+    padding-bottom: 1rem;
+    align-items: center;
+    text-align: center;
   }
-  header .only-nav-child .div-desplegable .ul {
+  .contenedor-fluido .contenedor-nav-header ul {
     line-height: 5rem;
   }
 }
