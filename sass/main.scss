@@ -1,0 +1,28 @@
+
+
+// global and reset
+@import './utilities/reset';
+@import './utilities/global';
+
+// utlities
+@import './utilities/variables';
+@import './utilities/mixin';
+// @import '';
+// @import '';
+// @import '';
+// @import '';
+
+// components
+@import './components/header';
+@import './components/footer';
+@import './components/search';
+// pages
+@import './pages/index';
+// @import '';
+// @import '';
+// @import '';
+// @import '';
+
+// media querys
+@import './utilities/mediaquery';
+
