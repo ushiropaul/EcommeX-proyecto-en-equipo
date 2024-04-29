@@ -2,10 +2,12 @@
 // DESKTOP
 
 main{
+    background: $background-blue-1;
+    background: $background-blue-2;
     .search-products{
         display: flex;
         justify-content: center;
-        margin-top: 2rem;
+        padding-top: 2rem;
     }
     .index-sect-1{
         width: 100%;
@@ -16,17 +18,105 @@ main{
         .div-titulo{
             h1{
                 font-size: 1.7rem;
-                font-weight: 500;
+                font-weight: 200;
                 text-align: center;
+                color: $white-color;
+                strong{
+                    color: rgb(127, 192, 249);
+                }
                 .span-titulo{
                     color: $violet-principal-color;
                     font-size: 6rem;
                     font-weight: 700;
                 }
                 span{
-                    color: $violet-secundary-color;
+                    color: $yellow-color;
                     font-size: 3rem;
                     font-weight: 700;
+                }
+            }
+        }
+    }
+    .index-sect-2{
+        .container-big-form{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-color: $violet-secundary-color;
+            border-radius: 2rem 1rem 2rem 1rem;
+            min-height: 600px;
+            box-shadow: 0 0 20px 0 $violet-secundary-color;
+            .titulo-form{
+                h2{
+                    color: $white-color;
+                    font-size: 3rem;
+                    font-weight: 500;
+                    .title-span{
+                        color: $violet-principal-color;
+                        font-size: 5rem;
+                        font-weight: 900;
+                    }
+                }
+                .subtitle-span{
+                    color: $white-color;
+                    font-size: 1.4rem;
+                }
+            }
+            .form-container{
+                width: 500px;
+                position: relative;
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        margin-bottom: .5rem;
+                        input{
+                            padding: .5rem;
+                            border-radius: .8rem;
+                            background-color: $violet-terciary-color;
+                            border: none;
+                            width: 80%;
+                            &:focus{
+                                outline: none;
+                                border: 2px solid $violet-principal-color;
+                                box-shadow: 0 0 10px 0 $violet-principal-color;
+                            }
+                            &::placeholder{
+                                font-family: 'Quicksand', sans-serif;
+                                font-weight: 600;
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                    .div-send{
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    margin-top: 1rem;
+                    .send{
+                        padding: .5rem;
+                        border-radius: .8rem;
+                        font-size: 1.3rem;
+                        width: 50%;
+                            &::placeholder{
+                                font-family: 'Quicksand', sans-serif;
+                                font-weight: 600;
+                            }
+                            &:focus, &:hover{
+                                transition: all .5s;
+                                background-color: $violet-principal-color;
+                                box-shadow: none;
+                                color: $white-color;
+
+                            }
+                    }
+                    }
                 }
             }
         }

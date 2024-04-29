@@ -1,49 +1,6 @@
 
-// header{
-//     .nav{
-//         padding: 0;
-//         .only-nav-child{
-//             background-color: $violet-principal-color;
-//             padding: 0;
-//             .logo-a{
-//                 padding: 0;
-//                 img{
-//                     max-width: 120px;
-//                 }
-//             }
-//             .btn-menu{
-//                 &:focus{
-//                     box-shadow: none;
-//                 }
-//                 .menu{
-//                     margin-right: 2rem;
-//                     margin-bottom: 1rem;
-//                 }
-//             }
-//             .div-desplegable{
-//                 display: flex;
-//                 justify-content: space-around;
-//                 padding: 2rem;
-//                 text-align: center;
-//                 .ul{
-//                     line-height: 5rem;
-//                     .ul-a{
-//                         color: $white-color;
-//                         font-size: 1.4rem;
-//                         font-weight: 600;
-//                         &:hover{
-//                             color: $violet-secundary-color-light;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
 
 
-
-// 
 header{
 
     .header{
@@ -77,4 +34,3 @@ header{
     }
     
 }
-// 

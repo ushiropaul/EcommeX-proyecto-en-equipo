@@ -1,27 +1,10 @@
 
 
 // HEADER MOBILE/TABLET 
-// @media screen and (max-width: 992px){
-//     header{
-//         .only-nav-child{
-//             position: relative;
-//             .div-desplegable{
-//                 position: absolute;
-//                 background-color: $violet-principal-color;
-//                 width: 100%;
-//                 top: 98px;
-//                 z-index: 9999;
-//                 .ul{
-//                     line-height: 5rem;
-//                 }
-//             }
-//         }
-//     }
-// }
-
 
 @media screen and (max-width:980px){
     .contenedor-fluido{
+        margin: 0;
         position: relative;
         .boton-menu{
             position: relative;
@@ -37,6 +20,7 @@
         .contenedor-nav-header{
             position: absolute;
             top: 98px;
+            left: 0;
             background-color: $violet-principal-color;
             width: 100%;
             padding-bottom: 1rem;
@@ -45,6 +29,27 @@
             ul{
                 line-height: 5rem;
             }
+        }
+    }
+
+    .index-sect-2{
+        .container-big-form{
+            padding-top: 3rem;
+            align-items: center;
+            .titulo-form{
+                text-align: center;
+                align-items: center;
+                padding-top: 2rem;
+                margin-bottom: 1rem;
+                .subtitle-span{
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+                .form-container{
+                    width: 100%;
+                }
+            }
+
         }
     }
 }    

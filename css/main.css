@@ -24,6 +24,7 @@ a {
   font-weight: 600;
 }
 
+/* Chrome 10-25, Safari 5.1-6 */
 header .header {
   z-index: 99999;
   background-color: #121242;
@@ -109,10 +110,14 @@ header .header .contenedor-fluido .contenedor-nav-header .texto-header:hover {
   fill: white;
 }
 
+main {
+  background: -webkit-linear-gradient(to right, #1e3c72, #2a5298);
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+}
 main .search-products {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 main .index-sect-1 {
   width: 100%;
@@ -123,8 +128,12 @@ main .index-sect-1 {
 }
 main .index-sect-1 .div-titulo h1 {
   font-size: 1.7rem;
-  font-weight: 500;
+  font-weight: 200;
   text-align: center;
+  color: #e9e9e9;
+}
+main .index-sect-1 .div-titulo h1 strong {
+  color: rgb(127, 192, 249);
 }
 main .index-sect-1 .div-titulo h1 .span-titulo {
   color: #121242;
@@ -132,13 +141,93 @@ main .index-sect-1 .div-titulo h1 .span-titulo {
   font-weight: 700;
 }
 main .index-sect-1 .div-titulo h1 span {
-  color: #2d2d58;
+  color: #29a30d;
   font-size: 3rem;
   font-weight: 700;
+}
+main .index-sect-2 .container-big-form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #2d2d58;
+  border-radius: 2rem 1rem 2rem 1rem;
+  min-height: 600px;
+  box-shadow: 0 0 20px 0 #2d2d58;
+}
+main .index-sect-2 .container-big-form .titulo-form h2 {
+  color: #e9e9e9;
+  font-size: 3rem;
+  font-weight: 500;
+}
+main .index-sect-2 .container-big-form .titulo-form h2 .title-span {
+  color: #121242;
+  font-size: 5rem;
+  font-weight: 900;
+}
+main .index-sect-2 .container-big-form .titulo-form .subtitle-span {
+  color: #e9e9e9;
+  font-size: 1.4rem;
+}
+main .index-sect-2 .container-big-form .form-container {
+  width: 500px;
+  position: relative;
+}
+main .index-sect-2 .container-big-form .form-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main .index-sect-2 .container-big-form .form-container form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+main .index-sect-2 .container-big-form .form-container form div input {
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  background-color: rgba(82, 91, 150, 0.8156862745);
+  border: none;
+  width: 80%;
+}
+main .index-sect-2 .container-big-form .form-container form div input:focus {
+  outline: none;
+  border: 2px solid #121242;
+  box-shadow: 0 0 10px 0 #121242;
+}
+main .index-sect-2 .container-big-form .form-container form div input::placeholder {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+main .index-sect-2 .container-big-form .form-container form .div-send {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+main .index-sect-2 .container-big-form .form-container form .div-send .send {
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  font-size: 1.3rem;
+  width: 50%;
+}
+main .index-sect-2 .container-big-form .form-container form .div-send .send::placeholder {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+}
+main .index-sect-2 .container-big-form .form-container form .div-send .send:focus, main .index-sect-2 .container-big-form .form-container form .div-send .send:hover {
+  transition: all 0.5s;
+  background-color: #121242;
+  box-shadow: none;
+  color: #e9e9e9;
 }
 
 @media screen and (max-width: 980px) {
   .contenedor-fluido {
+    margin: 0;
     position: relative;
   }
   .contenedor-fluido .boton-menu {
@@ -154,6 +243,7 @@ main .index-sect-1 .div-titulo h1 span {
   .contenedor-fluido .contenedor-nav-header {
     position: absolute;
     top: 98px;
+    left: 0;
     background-color: #121242;
     width: 100%;
     padding-bottom: 1rem;
@@ -162,6 +252,23 @@ main .index-sect-1 .div-titulo h1 span {
   }
   .contenedor-fluido .contenedor-nav-header ul {
     line-height: 5rem;
+  }
+  .index-sect-2 .container-big-form {
+    padding-top: 3rem;
+    align-items: center;
+  }
+  .index-sect-2 .container-big-form .titulo-form {
+    text-align: center;
+    align-items: center;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .index-sect-2 .container-big-form .titulo-form .subtitle-span {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .index-sect-2 .container-big-form .titulo-form .form-container {
+    width: 100%;
   }
 }
 
